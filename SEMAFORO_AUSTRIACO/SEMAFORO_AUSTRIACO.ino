@@ -5,6 +5,7 @@ int RossoDX = 10;
 int GialloDX = 9;
 int VerdeDX = 8;
 
+
 void setup() {
   // put your setup code here, to run once:
 pinMode(RossoSX, OUTPUT);
