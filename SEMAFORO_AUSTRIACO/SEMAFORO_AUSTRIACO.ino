@@ -1,84 +1,84 @@
-int red1 = 13;
-int yellow1 = 12;
-int green1 = 11;
-int red2 = 10;
-int yellow2 = 9;
-int green2 = 8;
+int RossoSX = 13;
+int GialloSX = 12;
+int VerdeSX= 11;
+int RossoDX = 10;
+int GialloDX = 9;
+int VerdeDX = 8;
 
 void setup() {
   // put your setup code here, to run once:
-pinMode(red1, OUTPUT);
-pinMode(yellow1, OUTPUT);
-pinMode(green1, OUTPUT);
-pinMode(red2, OUTPUT);
-pinMode(yellow2, OUTPUT);
-pinMode(green2, OUTPUT);
+pinMode(RossoSX, OUTPUT);
+pinMode(GialloSX, OUTPUT);
+pinMode(VerdeSX, OUTPUT);
+pinMode(RossoDX, OUTPUT);
+pinMode(GialloDX, OUTPUT);
+pinMode(VerdeDX, OUTPUT);
 }
 void lampeggia1() 
 {
-  digitalWrite(green1, HIGH);
+  digitalWrite(VerdeSX, HIGH);
   delay(500);
-  digitalWrite(green1, LOW);
+  digitalWrite(VerdeSX, LOW);
   delay(500);
-  digitalWrite(green1, HIGH);
+  digitalWrite(VerdeSX, HIGH);
   delay(500);
-  digitalWrite(green1, LOW);
+  digitalWrite(VerdeSX, LOW);
   delay(500);
-  digitalWrite(green1, HIGH);
+  digitalWrite(VerdeSX, HIGH);
   delay(500);
-  digitalWrite(green1, LOW);
+  digitalWrite(VerdeSX, LOW);
   delay(500);
-  digitalWrite(green1, HIGH);
+  digitalWrite(VerdeSX, HIGH);
   delay(500);
-  digitalWrite(green1, LOW);
+  digitalWrite(VerdeSX, LOW);
   delay(500);
 }
 void lampeggia2()
 {
-  digitalWrite(green2, HIGH);
+  digitalWrite(VerdeDX, HIGH);
   delay(500);
-  digitalWrite(green2, LOW);
+  digitalWrite(VerdeDX, LOW);
   delay(500);
-  digitalWrite(green2, HIGH);
+  digitalWrite(VerdeDX, HIGH);
   delay(500);
-  digitalWrite(green2, LOW);
+  digitalWrite(VerdeDX, LOW);
   delay(500);
-  digitalWrite(green2, HIGH);
+  digitalWrite(VerdeDX, HIGH);
   delay(500);
-  digitalWrite(green2, LOW);
+  digitalWrite(VerdeDX, LOW);
   delay(500);
-  digitalWrite(green2, HIGH);
+  digitalWrite(VerdeDX, HIGH);
   delay(500);
-  digitalWrite(green2, LOW);
+  digitalWrite(VerdeDX, LOW);
   delay(500);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-digitalWrite(red1, HIGH);
-digitalWrite(green2, HIGH);
+digitalWrite(RossoSX, HIGH);
+digitalWrite(VerdeDX, HIGH);
 delay(5000);
-digitalWrite(yellow1, HIGH);
+digitalWrite(GialloSX, HIGH);
 lampeggia2();
-digitalWrite(yellow1, HIGH);
-digitalWrite(yellow2, HIGH);
-digitalWrite(red1, LOW);
+digitalWrite(GialloSX, HIGH);
+digitalWrite(GialloDX, HIGH);
+digitalWrite(RossoSX, LOW);
 delay(1000);
-digitalWrite(green1, HIGH);
-digitalWrite(yellow1, LOW);
-digitalWrite(red2, HIGH);
-digitalWrite(yellow2, LOW);
+digitalWrite(VerdeSX, HIGH);
+digitalWrite(GialloSX, LOW);
+digitalWrite(RossoDX, HIGH);
+digitalWrite(GialloDX, LOW);
 delay(5000);
-digitalWrite(yellow2, HIGH);
+digitalWrite(GialloDX, HIGH);
 lampeggia1();
-digitalWrite(red2, LOW);
-digitalWrite(yellow2, HIGH);
-digitalWrite(yellow1, HIGH);
+digitalWrite(RossoDX, LOW);
+digitalWrite(GialloDX, HIGH);
+digitalWrite(GialloSX, HIGH);
 delay(1000);
-digitalWrite(green2, HIGH);
-digitalWrite(red1, HIGH);
-digitalWrite(yellow1, LOW);
-digitalWrite(yellow2, LOW);
+digitalWrite(VerdeDX, HIGH);
+digitalWrite(RossoSX, HIGH);
+digitalWrite(GialloSX, LOW);
+digitalWrite(GialloDX, LOW);
 delay(5000);
 
 
